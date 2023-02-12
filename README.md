@@ -6,7 +6,7 @@ Tested on MacOS Monterey 12.6.3
 ---
 
 ### Step 1: Check Java version. 
-I am using 1.8.0_241. 
+I am using Java 8 on this implementation. 
 
 ```shell
 % java -version
@@ -38,4 +38,10 @@ vim ~/.bash_profile
 Add your java home location.
 ```shell
 export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_241.jdk/Contents/Home
+```
+
+Switching java version installed.
+```shell
+% /usr/libexec/java_home -V
+export JAVA_HOME=`/usr/libexec/java_home -v 1.7`
 ```
